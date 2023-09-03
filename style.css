@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.container{
+    width: 1220px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.container-item{
+    flex-basis: 23%;
+    text-align: center;
+    background-color: white;
+    margin: 10px 0px;
+    padding: 20px 0px;
+    box-shadow: 0px 0px 10px 3px lightgray;
+}
+
+.container-item i{
+    font-size: 30px;
+    padding: 10px 0px;
+}
+
+.container-item p{
+    padding: 10px;
+}
+
+.container-item button{
+    background-color: blue;
+    padding: 10px 25px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+.container-item:hover{
+    background-color: blue;
+}
+
+.container-item:hover h2, .container-item:hover p, .container-item:hover i{
+color: white;
+}
+
+.container-item:hover button{
+    background-color: white;
+    color: blue;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 767px){
+    .container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .container-item{
+    margin: 10px;
+    }
+}
